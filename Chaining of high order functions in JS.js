@@ -8,7 +8,7 @@ const transactions = [
 
 const totalCreditWithBonus = transactions
   .filter((transaction) => transaction.type === "credit")
-  .map((transaction) => transaction.amount * 1.1)
-  .reduce((sum, amount) => sum + amount, 0);
+  .map((transaction) => transaction.amount * 1.1)  //here it return array of only the amount values only 
+  .reduce((sum, amount) => sum + amount, 0);  //this here will summ only the amount and iterate on it 
 
 console.log(totalCreditWithBonus); // 357.5
